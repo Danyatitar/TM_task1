@@ -1,0 +1,135 @@
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 375px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header,
+.footer {
+  background-color: red;
+}
+.header-content,
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.logo::first-letter {
+  color: blue;
+}
+.logo {
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+}
+.nav-menu {
+  display: flex;
+  gap: 10px;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.4s ease;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: blue;
+}
+.main {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: rgb(245, 245, 245);
+}
+.main-content {
+  display: flex;
+  gap: 20px;
+}
+.main-content-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 500px;
+  overflow: scroll;
+}
+
+.main-content-images-item {
+  display: block;
+  min-width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+.main-content-aside {
+  width: 100%;
+}
+.main-content-aside-item {
+  padding: 10px 15px;
+  background-color: gray;
+  color: white;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.main-content-aside-item:nth-child(1) {
+  margin-top: 0;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 35px;
+  }
+  .nav-menu {
+    gap: 20px;
+  }
+  .nav-link {
+    font-size: 24px;
+  }
+  .container {
+    max-width: 768px;
+  }
+  .main-content-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+  }
+  .main-content-images-item {
+    max-width: 240px;
+  }
+  .main-content-aside-item {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 40px;
+  }
+  .nav-menu {
+    gap: 20px;
+  }
+  .nav-link {
+    font-size: 28px;
+  }
+  .container {
+    max-width: 1200px;
+  }
+  .main-content-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 950px;
+    overflow: auto;
+    height: auto;
+  }
+  .main-content-aside-item {
+    font-size: 28px;
+  }
+  .main-content-images-item {
+    max-width: 300px;
+  }
+}
